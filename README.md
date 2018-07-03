@@ -1,6 +1,6 @@
 # Wallet Stone
 
-Desafio Stone que consiste em criar uma carteira virtual de criptomoedas.
+A challenge that consists of creating a digital wallet of cryptocurrencies.
 
 ## Ferramentas Utilizadas
 
