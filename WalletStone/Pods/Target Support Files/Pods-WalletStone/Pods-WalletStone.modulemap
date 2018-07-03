@@ -1,0 +1,6 @@
+framework module Pods_WalletStone {
+  umbrella header "Pods-WalletStone-umbrella.h"
+
+  export *
+  module * { export * }
+}

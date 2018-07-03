@@ -1,0 +1,16 @@
+platform :ios, '9.0'
+use_frameworks!
+
+def shared_pods
+    
+  
+    pod 'SkyFloatingLabelTextField', '~> 3.0'
+    pod 'TPKeyboardAvoiding'
+    
+end
+
+target "WalletStone" do
+    
+    shared_pods
+    
+end

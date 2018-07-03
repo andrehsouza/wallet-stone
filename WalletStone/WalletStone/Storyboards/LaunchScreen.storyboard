@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wallet Stone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jNu-xb-gdb">
+                                <rect key="frame" x="71" y="260" width="233.5" height="48"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright © 2018 Wallet Stone. All rights reserved" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BbU-eI-07o">
+                                <rect key="frame" x="100" y="605.5" width="175" height="31.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="175" id="yfN-5M-nq9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GC1-OL-RH7">
+                                <rect key="frame" x="107" y="65" width="160" height="160"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_circle_bg" translatesAutoresizingMaskIntoConstraints="NO" id="0Lp-7e-DtB">
+                                        <rect key="frame" x="0.0" y="0.0" width="160" height="160"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_logo" translatesAutoresizingMaskIntoConstraints="NO" id="MEp-IG-dUs">
+                                        <rect key="frame" x="20" y="8" width="120" height="132"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="MEp-IG-dUs" firstAttribute="leading" secondItem="GC1-OL-RH7" secondAttribute="leading" constant="20" id="4Ci-vN-kDx"/>
+                                    <constraint firstItem="0Lp-7e-DtB" firstAttribute="top" secondItem="GC1-OL-RH7" secondAttribute="top" id="Dx5-uA-2qY"/>
+                                    <constraint firstAttribute="trailing" secondItem="MEp-IG-dUs" secondAttribute="trailing" constant="20" id="KAC-sA-zIv"/>
+                                    <constraint firstAttribute="trailing" secondItem="0Lp-7e-DtB" secondAttribute="trailing" id="Mfu-cA-83k"/>
+                                    <constraint firstItem="MEp-IG-dUs" firstAttribute="top" secondItem="GC1-OL-RH7" secondAttribute="top" constant="8" id="OVf-Sp-vRo"/>
+                                    <constraint firstAttribute="height" constant="160" id="R86-PP-vy6"/>
+                                    <constraint firstItem="0Lp-7e-DtB" firstAttribute="leading" secondItem="GC1-OL-RH7" secondAttribute="leading" id="TsB-Ha-z3Z"/>
+                                    <constraint firstAttribute="bottom" secondItem="0Lp-7e-DtB" secondAttribute="bottom" id="iPh-DA-8aS"/>
+                                    <constraint firstAttribute="width" constant="160" id="oHK-CQ-Vgk"/>
+                                    <constraint firstAttribute="bottom" secondItem="MEp-IG-dUs" secondAttribute="bottom" constant="20" id="wYk-JL-94Z"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.062745098040000002" green="0.68627450980000004" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="GC1-OL-RH7" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="DDz-TL-6xO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="BbU-eI-07o" secondAttribute="bottom" constant="30" id="E55-wp-aLO"/>
+                            <constraint firstItem="BbU-eI-07o" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="bTu-Tz-FuR"/>
+                            <constraint firstItem="jNu-xb-gdb" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="cvW-gH-6gD"/>
+                            <constraint firstItem="jNu-xb-gdb" firstAttribute="top" secondItem="GC1-OL-RH7" secondAttribute="bottom" constant="35" id="meF-yg-cCN"/>
+                            <constraint firstItem="GC1-OL-RH7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="45" id="pbg-TQ-k8f"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_circle_bg" width="256" height="256"/>
+        <image name="ic_logo" width="128" height="128"/>
+    </resources>
+</document>

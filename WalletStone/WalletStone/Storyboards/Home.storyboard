@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Sobre-->
+        <scene sceneID="5om-b5-IiB">
+            <objects>
+                <viewController title="Sobre" id="syl-4k-f5m" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AqF-YF-Dxg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SMR-MS-Oni" customClass="WSCardView" customModule="WalletStone" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="346" width="375" height="321"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Autor: André Souza" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="hcm-EM-dkW">
+                                        <rect key="frame" x="15" y="72" width="282" height="39.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="33"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wallet Stone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EG6-je-cbX">
+                                        <rect key="frame" x="15" y="15" width="194" height="42"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="35"/>
+                                        <color key="textColor" red="0.062745098040000002" green="0.68627450980000004" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="EG6-je-cbX" firstAttribute="top" secondItem="SMR-MS-Oni" secondAttribute="top" constant="15" id="0FM-5N-YyE"/>
+                                    <constraint firstItem="hcm-EM-dkW" firstAttribute="top" secondItem="EG6-je-cbX" secondAttribute="bottom" constant="15" id="5F5-79-EaY"/>
+                                    <constraint firstItem="EG6-je-cbX" firstAttribute="leading" secondItem="SMR-MS-Oni" secondAttribute="leading" constant="15" id="7oy-Sn-Pj8"/>
+                                    <constraint firstItem="hcm-EM-dkW" firstAttribute="leading" secondItem="SMR-MS-Oni" secondAttribute="leading" constant="15" id="O8I-yO-OlI"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="layerBackgroundColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KWn-id-9eN" customClass="WSCardView" customModule="WalletStone" customModuleProvider="target">
+                                <rect key="frame" x="107.5" y="151" width="160" height="160"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_logo" translatesAutoresizingMaskIntoConstraints="NO" id="sxI-sw-hAH">
+                                        <rect key="frame" x="20" y="8" width="120" height="132"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="sxI-sw-hAH" firstAttribute="leading" secondItem="KWn-id-9eN" secondAttribute="leading" constant="20" id="2cC-Nb-vdG"/>
+                                    <constraint firstAttribute="bottom" secondItem="sxI-sw-hAH" secondAttribute="bottom" constant="20" id="Bs9-GB-3op"/>
+                                    <constraint firstItem="sxI-sw-hAH" firstAttribute="top" secondItem="KWn-id-9eN" secondAttribute="top" constant="8" id="EaQ-qd-TOf"/>
+                                    <constraint firstAttribute="width" constant="160" id="JQy-cV-Pzr"/>
+                                    <constraint firstAttribute="height" constant="160" id="MoF-fW-wHD"/>
+                                    <constraint firstItem="sxI-sw-hAH" firstAttribute="leading" secondItem="KWn-id-9eN" secondAttribute="leading" constant="20" id="SFg-oD-rjV"/>
+                                    <constraint firstAttribute="trailing" secondItem="sxI-sw-hAH" secondAttribute="trailing" constant="20" id="aIO-Va-7W0"/>
+                                    <constraint firstAttribute="bottom" secondItem="sxI-sw-hAH" secondAttribute="bottom" constant="20" id="lqV-tg-E9H"/>
+                                    <constraint firstItem="sxI-sw-hAH" firstAttribute="top" secondItem="KWn-id-9eN" secondAttribute="top" constant="8" id="qUg-5p-yEs"/>
+                                    <constraint firstAttribute="trailing" secondItem="sxI-sw-hAH" secondAttribute="trailing" constant="20" id="tVT-ES-VLx"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="layerBackgroundColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="80"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.015686274509803921" green="0.69803921568627447" blue="0.4392156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="SMR-MS-Oni" firstAttribute="trailing" secondItem="Zl0-5B-uiW" secondAttribute="trailing" id="DMa-U9-Cso"/>
+                            <constraint firstItem="SMR-MS-Oni" firstAttribute="bottom" secondItem="Zl0-5B-uiW" secondAttribute="bottom" id="GaU-sD-Ksg"/>
+                            <constraint firstItem="SMR-MS-Oni" firstAttribute="top" secondItem="KWn-id-9eN" secondAttribute="bottom" constant="35" id="NAm-RS-zUQ"/>
+                            <constraint firstItem="SMR-MS-Oni" firstAttribute="leading" secondItem="Zl0-5B-uiW" secondAttribute="leading" id="R2J-Mz-aUf"/>
+                            <constraint firstItem="KWn-id-9eN" firstAttribute="top" secondItem="Zl0-5B-uiW" secondAttribute="top" constant="35" id="eUx-ZP-YpV"/>
+                            <constraint firstItem="KWn-id-9eN" firstAttribute="centerX" secondItem="SMR-MS-Oni" secondAttribute="centerX" id="whV-gb-HDc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Zl0-5B-uiW"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CzA-f8-30l" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="244" y="-770.46476761619192"/>
+        </scene>
+        <!--Minha conta-->
+        <scene sceneID="Qxc-U0-2Ph">
+            <objects>
+                <viewController storyboardIdentifier="MyAccountViewController" id="FMt-Iz-8bM" customClass="MyAccountViewController" customModule="WalletStone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dBb-Ni-aYe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="BmW-Fl-dxX">
+                                <rect key="frame" x="90" y="153.5" width="270" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="ViB-fk-HzS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O9B-OD-jkX" customClass="WSCardView" customModule="WalletStone" customModuleProvider="target">
+                                <rect key="frame" x="15" y="151" width="60" height="60"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_avatar" translatesAutoresizingMaskIntoConstraints="NO" id="D3b-LO-wNM">
+                                        <rect key="frame" x="10" y="10" width="40" height="40"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="D3b-LO-wNM" secondAttribute="trailing" constant="10" id="22I-fe-gkg"/>
+                                    <constraint firstAttribute="width" constant="60" id="32c-sd-QRT"/>
+                                    <constraint firstAttribute="height" constant="60" id="4lY-fH-w8h"/>
+                                    <constraint firstItem="D3b-LO-wNM" firstAttribute="leading" secondItem="O9B-OD-jkX" secondAttribute="leading" constant="10" id="4wN-py-ebv"/>
+                                    <constraint firstAttribute="bottom" secondItem="D3b-LO-wNM" secondAttribute="bottom" constant="10" id="DAk-9a-mGN"/>
+                                    <constraint firstItem="D3b-LO-wNM" firstAttribute="top" secondItem="O9B-OD-jkX" secondAttribute="top" constant="10" id="TLe-Yd-qGe"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="layerBackgroundColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.062745098040000002" green="0.68627450980000004" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hvo-Gk-9d8" customClass="WSButton" customModule="WalletStone" customModuleProvider="target">
+                                <rect key="frame" x="25" y="261" width="325" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="EDd-08-fgJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Sair desta conta">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                        <color key="value" red="0.91372549020000005" green="0.82892334156004832" blue="0.40948419586001977" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="touchExit:" destination="FMt-Iz-8bM" eventType="touchUpInside" id="bWK-ou-HJ9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="CAB-0l-JPd" firstAttribute="trailing" secondItem="BmW-Fl-dxX" secondAttribute="trailing" constant="15" id="AnR-3Y-Pev"/>
+                            <constraint firstItem="hvo-Gk-9d8" firstAttribute="leading" secondItem="CAB-0l-JPd" secondAttribute="leading" constant="25" id="BUR-Dh-GF3"/>
+                            <constraint firstItem="BmW-Fl-dxX" firstAttribute="centerY" secondItem="O9B-OD-jkX" secondAttribute="centerY" id="Cc4-Dw-blj"/>
+                            <constraint firstItem="O9B-OD-jkX" firstAttribute="top" secondItem="CAB-0l-JPd" secondAttribute="top" constant="35" id="IiN-bq-hbA"/>
+                            <constraint firstItem="O9B-OD-jkX" firstAttribute="leading" secondItem="CAB-0l-JPd" secondAttribute="leading" constant="15" id="KoN-eM-h9g"/>
+                            <constraint firstItem="hvo-Gk-9d8" firstAttribute="top" secondItem="O9B-OD-jkX" secondAttribute="bottom" constant="50" id="g3h-RR-Mqc"/>
+                            <constraint firstItem="CAB-0l-JPd" firstAttribute="trailing" secondItem="hvo-Gk-9d8" secondAttribute="trailing" constant="25" id="vZO-Fb-4yO"/>
+                            <constraint firstItem="BmW-Fl-dxX" firstAttribute="leading" secondItem="O9B-OD-jkX" secondAttribute="trailing" constant="15" id="xm9-og-arN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="CAB-0l-JPd"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Minha conta" image="ic_account" id="FIZ-U7-FzR"/>
+                    <connections>
+                        <outlet property="nameLbl" destination="BmW-Fl-dxX" id="tq2-4Y-j7t"/>
+                        <segue destination="caD-np-GZu" kind="unwind" identifier="MyAccountViewController" unwindAction="unwindToLoginWithSegue:" id="jV1-lu-xoq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Igf-cL-gXY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="caD-np-GZu" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1273" y="-543"/>
+        </scene>
+        <!--Carteiras-->
+        <scene sceneID="iT6-qL-1bm">
+            <objects>
+                <viewController storyboardIdentifier="WalletListViewController" id="Z1u-yh-H7r" customClass="WalletListViewController" customModule="WalletStone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tC0-fZ-rKm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Nbp-w8-SB3">
+                                <rect key="frame" x="0.0" y="116" width="375" height="502"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="separatorColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Z1u-yh-H7r" id="xU9-Qi-np9"/>
+                                    <outlet property="delegate" destination="Z1u-yh-H7r" id="Dze-fq-ORJ"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="CUQ-rl-kBX" firstAttribute="bottom" secondItem="Nbp-w8-SB3" secondAttribute="bottom" id="IKa-E9-oRD"/>
+                            <constraint firstItem="Nbp-w8-SB3" firstAttribute="top" secondItem="CUQ-rl-kBX" secondAttribute="top" id="KMU-Vu-btW"/>
+                            <constraint firstItem="CUQ-rl-kBX" firstAttribute="trailing" secondItem="Nbp-w8-SB3" secondAttribute="trailing" id="R8z-Uq-WUl"/>
+                            <constraint firstItem="Nbp-w8-SB3" firstAttribute="leading" secondItem="CUQ-rl-kBX" secondAttribute="leading" id="bTH-vM-RTn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="CUQ-rl-kBX"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Carteiras" image="ic_wallet" id="qkx-fR-G6L"/>
+                    <connections>
+                        <outlet property="tableView" destination="Nbp-w8-SB3" id="gg3-H4-PwR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wIj-My-iBx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1274" y="271"/>
+        </scene>
+        <!--Carteiras-->
+        <scene sceneID="0aK-wi-Wb3">
+            <objects>
+                <tabBarController storyboardIdentifier="WalletHomeViewController" id="AMJ-Zh-nyB" customClass="WalletHomeViewController" customModule="WalletStone" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" title="Carteiras" id="ZZo-u7-aLn">
+                        <barButtonItem key="rightBarButtonItem" title="Sobre" image="ic_about" id="TUn-Za-NO1">
+                            <connections>
+                                <segue destination="syl-4k-f5m" kind="show" id="fU6-kx-Maq"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="BiG-et-0I5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.56761056440000002" green="0.76583145159999999" blue="0.59174048290000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Z1u-yh-H7r" kind="relationship" relationship="viewControllers" id="bgD-YE-qfy"/>
+                        <segue destination="FMt-Iz-8bM" kind="relationship" relationship="viewControllers" id="X9w-Ni-AmW"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kz6-Fv-Coe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="244" y="-3"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="34E-J9-gaz">
+            <objects>
+                <navigationController storyboardIdentifier="WSNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="hAL-IE-HD6" customClass="WSNavigationController" customModule="WalletStone" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="Tz8-hd-Lhp">
+                        <rect key="frame" x="0.0" y="20" width="375" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.062745098040000002" green="0.68627450980000004" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="AMJ-Zh-nyB" kind="relationship" relationship="rootViewController" id="7C5-b1-88L"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wl8-no-MCs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-594" y="-3"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_about" width="32" height="32"/>
+        <image name="ic_account" width="32" height="32"/>
+        <image name="ic_avatar" width="128" height="128"/>
+        <image name="ic_logo" width="128" height="128"/>
+        <image name="ic_wallet" width="32" height="32"/>
+    </resources>
+</document>
