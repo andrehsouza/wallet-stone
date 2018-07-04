@@ -45,7 +45,7 @@ enum Cryptocurrency: Int {
 }
 
 @objc(Wallet)
-class Wallet: NSManagedObject {
+class Wallet: CustomNSManagedObject, FetchableProtocol {
     
     @NSManaged private var type: NSNumber?
     @NSManaged private var balance: NSNumber?
@@ -98,8 +98,7 @@ extension Wallet {
     }
     
     private func createTransaction(_ type: TransactionType, _ value: Double) {
-        let managedContext = CoreDataStack.sharedInstance.persistentContainer.viewContext
-        let transaction = managedContext.insert(entity: Transaction.self)
+        let transaction = Transaction()
         transaction.transactionType = type
         transaction.value = value.decimalFormat()
         transaction.wallet = self

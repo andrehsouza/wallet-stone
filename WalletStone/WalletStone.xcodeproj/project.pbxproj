@@ -70,6 +70,7 @@
 		7B68230420CF06A900559A65 /* WSButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B68230320CF06A900559A65 /* WSButton.swift */; };
 		7B68230820CF076D00559A65 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B68230720CF076D00559A65 /* UIColor+Extension.swift */; };
 		7B68230C20CF128F00559A65 /* WSCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B68230B20CF128F00559A65 /* WSCardView.swift */; };
+		7B85FD2820ED629700EAE03E /* NSObject+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B85FD2720ED629700EAE03E /* NSObject+Extension.swift */; };
 		7B8BF02120D06A0200F73D0A /* UIStoryboard+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8BF02020D06A0200F73D0A /* UIStoryboard+Extension.swift */; };
 		7B8BF02420D06B9F00F73D0A /* WSConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8BF02320D06B9F00F73D0A /* WSConstants.swift */; };
 		7B8BF02720D0706D00F73D0A /* WalletHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8BF02620D0706D00F73D0A /* WalletHomeViewController.swift */; };
@@ -166,6 +167,7 @@
 		7B68230320CF06A900559A65 /* WSButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSButton.swift; sourceTree = "<group>"; };
 		7B68230720CF076D00559A65 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		7B68230B20CF128F00559A65 /* WSCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSCardView.swift; sourceTree = "<group>"; };
+		7B85FD2720ED629700EAE03E /* NSObject+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Extension.swift"; sourceTree = "<group>"; };
 		7B8BF02020D06A0200F73D0A /* UIStoryboard+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Extension.swift"; sourceTree = "<group>"; };
 		7B8BF02320D06B9F00F73D0A /* WSConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSConstants.swift; sourceTree = "<group>"; };
 		7B8BF02620D0706D00F73D0A /* WalletHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletHomeViewController.swift; sourceTree = "<group>"; };
@@ -356,6 +358,7 @@
 				3056393120D0A68100F6D152 /* UITableView+Extension.swift */,
 				30175A0120D146E500DE58F6 /* Date+Extensions.swift */,
 				30175A0320D1524800DE58F6 /* UIAlertController+Extension.swift */,
+				7B85FD2720ED629700EAE03E /* NSObject+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -705,6 +708,7 @@
 				30CF1FD920CD98ED00FA52AA /* CoreDataStack.swift in Sources */,
 				7B8BF02720D0706D00F73D0A /* WalletHomeViewController.swift in Sources */,
 				30175A1720D161A400DE58F6 /* OperationViewProtocol.swift in Sources */,
+				7B85FD2820ED629700EAE03E /* NSObject+Extension.swift in Sources */,
 				7B6822F520CEF07500559A65 /* Double+Extension.swift in Sources */,
 				302749B420CF6552002C68AA /* UIViewController+Extension.swift in Sources */,
 				30175A0920D1545800DE58F6 /* TransactionListViewPresenter.swift in Sources */,

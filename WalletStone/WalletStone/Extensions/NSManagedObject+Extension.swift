@@ -9,41 +9,30 @@
 import Foundation
 import CoreData
 
-protocol Entity: class {}
-
-extension Entity where Self: NSObject {
-    static var entityName: String {
-        return String(describing: self)
-    }
+protocol FetchableProtocol: class {
+    associatedtype FetchableType: NSManagedObject = Self
 }
 
-extension NSManagedObject: Entity {}
-
-extension NSManagedObjectContext {
+extension FetchableProtocol where Self : NSManagedObject, FetchableType == Self {
     
-    func fetchRequest<T: NSManagedObject>(_ entity: T.Type) -> NSFetchRequest<T> {
-        return NSFetchRequest<T>(entityName: entity.entityName)
-    }
-    
-    func fetchAll<T: NSManagedObject>(entity: T.Type) -> [T] {
-        let managedContext = CoreDataStack.sharedInstance.persistentContainer.viewContext
-        let fetchRequest: NSFetchRequest<T> = self.fetchRequest(T.self)
-        
+    static func fetchAll() -> [FetchableType] {
+        let fetchRequest = NSFetchRequest<FetchableType>(entityName: objectName)
         do {
-            let array = try managedContext.fetch(fetchRequest) as [T]
+            let array = try CoreDataStack.sharedInstance.persistentContainer.viewContext.fetch(fetchRequest) as [FetchableType]
             return array
         } catch let errore {
             print("error FetchRequest \(errore)")
         }
-        
+
         return []
     }
-    
-    func insert<T : NSManagedObject>(entity: T.Type) -> T {
-        guard let object = NSEntityDescription.insertNewObject(forEntityName: entity.entityName, into: self) as? T else {
-            fatalError("Could not cast: \(entity.entityName)")
-        }
-        return object
-    }
-    
 }
+
+class CustomNSManagedObject: NSManagedObject {
+
+    convenience init() {
+        self.init(context: CoreDataStack.sharedInstance.persistentContainer.viewContext)
+    }
+
+}
+

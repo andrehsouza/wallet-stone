@@ -32,8 +32,7 @@ extension LoginViewPresenter {
     
     func tryLogin(email: String, password: String, isAutomatic: Bool) {
         loginProtocol?.showLoader()
-        let managedContext = CoreDataStack.sharedInstance.persistentContainer.viewContext
-        let customerList = managedContext.fetchAll(entity: Customer.self)
+        let customerList = Customer.fetchAll()
         if let customer = customerList.filter( {$0.email == email && $0.password == password }).first {
             saveDefaults(email, password, isAutomatic)
             loginProtocol?.goToHome(with: customer)

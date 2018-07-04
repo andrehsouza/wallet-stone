@@ -35,7 +35,7 @@ enum TransactionType: Int {
 }
 
 @objc(Transaction)
-class Transaction: NSManagedObject {
+class Transaction: CustomNSManagedObject, FetchableProtocol {
     
     @NSManaged private var type: NSNumber?
     @NSManaged var wallet: Wallet?

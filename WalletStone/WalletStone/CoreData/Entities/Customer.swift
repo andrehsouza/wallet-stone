@@ -10,7 +10,7 @@ import Foundation
 import CoreData
 
 @objc(Customer)
-class Customer: NSManagedObject {
+class Customer: CustomNSManagedObject, FetchableProtocol { 
     
     @NSManaged var name: String
     @NSManaged var email: String

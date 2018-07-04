@@ -24,16 +24,14 @@ extension RegisterViewPresenter {
     
     func register(_ name: String, _ email: String, _ password: String) {
         
-        let managedContext = CoreDataStack.sharedInstance.persistentContainer.viewContext
-        
-        let customer = managedContext.insert(entity: Customer.self)
+        let customer = Customer()
         customer.name = name
         customer.email = email
         customer.password = password
         
         let cryptoCurrencies:[Cryptocurrency] = [.real, .bitcoin, .brita]
         cryptoCurrencies.forEach() { cryptoCurrency in
-            let wallet = managedContext.insert(entity: Wallet.self)
+            let wallet = Wallet()
             wallet.cryptoCurrency = cryptoCurrency
             wallet.balanceValue = cryptoCurrency == .real ? 10000.00 : 0.00
             customer.wallets?.insert(wallet)
